@@ -271,7 +271,8 @@ while <condition_1>:
 while <condition_2>:
 
   <expression_a>
-break
+
+ break
   
    <expression_b>
 
