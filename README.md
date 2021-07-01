@@ -5,7 +5,7 @@ Course Description
 
 https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-videos/
 
-I'll upload the slides because obviously I do not have patience to watch videos which are these long.
+I'll upload the slides because obviously I do not have patience to watch videos which are this long.
 
 
  a program is a sequence of definitions and commands
@@ -109,3 +109,171 @@ greeting = hi + " " + name
 
  do some operations on a string as defined in Python docs
 silly = hi + " " + name * 3
+
+INPUT/OUTPUT: input("")
+
+ prints whatever is in the quotes
+
+ user types in something and hits enter
+
+ binds that value to a variable
+
+  text = input("Type anything... ")
+  
+  print(5*text)
+
+ input gives you a string so must cast if working
+with numbers
+
+  num = int(input("Type a number... "))
+  
+  print(5*num)
+  
+COMPARISON OPERATORS ON
+int, float, string
+
+ i and j are variable names
+
+ comparisons below evaluate to a Boolean
+
+  i > j
+
+  i >= j
+  
+  i < j
+
+  i <= j
+
+  i == j  equality test, True if i is the same as j
+
+  i != j  inequality test, True if i not the same as j
+  
+LOGIC OPERATORS ON bools
+
+ a and b are variable names (with Boolean values)
+
+not a  True if a is False
+        
+        False if a is True
+
+a and b  True if both are True
+
+a or b  True if either or both are True
+
+A     B     A and B     A or B
+True True    True        True
+
+True False   False       True
+
+False True   False       True
+
+False False  False       False
+ 
+CONTROL FLOW - BRANCHING
+
+if <condition>:
+   
+  <expression>
+  
+  <expression>
+...
+    
+if <condition>:
+
+ <expression>
+
+ <expression>
+...
+
+else:
+
+ <expression>
+   
+ <expression>
+...
+
+if <condition>:
+
+<expression>
+
+<expression>
+...
+
+elif <condition>:
+
+<expression>
+
+<expression>
+...
+
+else:
+
+<expression>
+
+<expression>
+...
+
+ <condition> has a value True or False
+
+ evaluate expressions in that block if <condition> is True
+  
+CONTROL FLOW:
+
+while LOOPS
+
+while <condition>:
+
+<expression>
+
+<expression>
+...
+
+ <condition> evaluates to a Boolean
+  
+ if <condition> is True, do all the steps inside the
+while code block
+
+ check <condition> again
+
+ repeat until <condition> is False
+
+CONTROL FLOW: for LOOPS
+
+for <variable> in range(<some_num>):
+
+<expression>
+
+<expression>
+...
+
+ each time through the loop, <variable> takes a value
+
+ first time, <variable> starts at the smallest value
+
+ next time, <variable> gets the prev value + 1
+  
+range(start,stop,step)
+
+ default values are start = 0 and step = 1 and optional
+
+ loop until value is stop - 1 
+  
+break STATEMENT
+
+ immediately exits whatever loop it is in
+
+ skips remaining expressions in code block
+
+ exits only innermost loop!
+
+while <condition_1>:
+
+while <condition_2>:
+
+  <expression_a>
+break
+  
+   <expression_b>
+
+   <expression_c>
+     
