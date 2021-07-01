@@ -57,5 +57,55 @@ TYPE CONVERSIONS (CAST)
 
  int(3.9) truncates float 3.9 to integer 3
 
+EXPRESSIONS
 
+ combine objects and operators to form expressions
 
+ an expression has a value, which has a type
+
+ syntax for a simple expression
+
+<object> <operator> <object>
+
+OPERATORS ON ints and floats
+
+ i+j  the sum
+
+ i-j  the difference
+
+ i*j  the product
+
+ i/j  division
+
+ i%j  the remainder when i is divided by j
+
+ i**j  i to the power of j
+
+ parentheses used to tell Python to do these
+operations first
+
+ operator precedence without parentheses
+
+◦ **
+
+◦ *
+
+◦ /
+
+◦ + and – executed left to right, as appear in expression
+  
+STRINGS
+
+ letters, special characters, spaces, digits
+
+ enclose in quotation marks or single quotes
+
+  hi = "hello there"
+  
+ concatenate strings
+name = "ana"
+greet = hi + name
+greeting = hi + " " + name
+
+ do some operations on a string as defined in Python docs
+silly = hi + " " + name * 3
