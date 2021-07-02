@@ -278,3 +278,69 @@ while <condition_2>:
 
    <expression_c>
      
+STRINGS
+
+ think of as a sequence of case sensitive characters
+
+ can compare strings with ==, >, < etc.
+
+ len() is a function used to retrieve the length of the
+string in the parentheses
+
+       s = "abc"
+        
+       len(s)  evaluates to 3
+                                        
+ square brackets used to perform indexing into a string
+to get the value at a certain index/position
+
+s = "abc"
+
+   s[0]  evaluates to "a"
+
+   s[1]  evaluates to "b"
+                                        
+   s[2]  evaluates to "c"
+
+   s[3]  trying to index out of bounds, error
+
+   s[-1]  evaluates to "c"
+                                        
+   s[-2]  evaluates to "b"
+
+   s[-3]  evaluates to "a"                                       
+                                        
+ can slice strings using [start:stop:step]
+
+ if give two numbers, [start:stop], step=1 by default
+
+ you can also omit numbers and leave just colons
+
+s = "abcdefgh"
+
+s[3:6]  evaluates to "def", same as s[3:6:1]
+
+s[3:6:2]  evaluates to "df"
+
+s[::]  evaluates to "abcdefgh", same as s[0:len(s):1]
+
+s[::-1]  evaluates to "hgfedbca", same as s[-1:-(len(s)+1):-1]
+
+s[4:1:-2] evaluates to "ec"
+                                        
+ strings are “immutable” – cannot be modified
+                                    
+GUESS-AND-CHECK
+
+ the process below also called exhaustive enumeration
+                                        
+ given a problem…
+                                        
+ you are able to guess a value for solution
+                                        
+                                        
+                                        
+                                        
+                                        
+ you are able to check if the solution is correct
+ keep guessing until find solution or guessed all values
