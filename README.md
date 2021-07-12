@@ -465,4 +465,198 @@ SCOPE EXAMPLE:
  inside a function, cannot modify a variable defined
 outside -- can using global variables, but frowned upon  
                                         
+TUPLES
+                                        
+ an ordered sequence of elements, can mix element types
+                                        
+ cannot change element values, immutable
+                                        
+ represented with parentheses
+                                        
+t[1:2]   slice tuple, evaluates to ("mit",)
+                                        
+t[1:3]   slice tuple, evaluates to ("mit",3)
+                                        
+len(t)   evaluates to 3
+                                        
+t[1] = 4   gives error, can’t modify object                                        
+                                        
+ conveniently used to swap variable values   
+                                        
+ used to return more than one value from a function
+                                        
+ can iterate over tuples
+                                        
+LISTS
+                                        
+ ordered sequence of information, accessible by index
+                                        
+ a list is denoted by square brackets, []
+                                        
+ a list contains elements
+                                        
+• usually homogeneous (ie, all integers)
+                                        
+• can contain mixed types (not common)
+                                        
+ list elements can be changed so a list is mutable 
+                                        
+INDICES AND ORDERING
+                                        
+a_list = []
+                                        
+L = [2, 'a', 4, [1,2]]
+                                        
+len(L)  evaluates to 4
+                                        
+L[0]  evaluates to 2
+                                        
+L[2]+1  evaluates to 5
+                                        
+L[3]  evaluates to [1,2], another list!
+                                        
+L[4]  gives an error
+                                        
+i = 2
+                                        
+L[i-1]  evaluates to ‘a’ since L[1]='a' above 
+                                        
+CHANGING ELEMENTS
+                                        
+ lists are mutable!
+                                        
+ assigning to an element at an index changes the value
+                                        
+L = [2, 1, 3]
+                                        
+L[1] = 5
+                                        
+ L is now [2, 5, 3], note this is the same object L
+                                        
+ITERATING OVER A LIST
+                                        
+ compute the sum of elements of a list
+                                        
+ common pattern, iterate over list elements
+                                        
+ notice
+                                        
+• list elements are indexed 0 to len(L)-1
+                                        
+• range(n) goes from 0 to n-1           
+                                        
+OPERATIONS ON LISTS - ADD:
+                                        
+ add elements to end of list with L.append(element)
+                                        
+ mutates the list!
+                                        
+L = [2,1,3]
+                                        
+L.append(5) 
+                                        
+ L is now [2,1,3,5]
+                                        
+ what is the dot?
+                                        
+• lists are Python objects, everything in Python is an object
+                                        
+• objects have data
+                                        
+• objects have methods and functions
+                                        
+• access this information by object_name.do_something()
+                                        
+ to combine lists together use concatenation, + operator,
+to give you a new list
+                                        
+ mutate list with L.extend(some_list) 
+                                        
+OPERATIONS ON LISTS -REMOVE:
+                                        
+ delete element at a specific index with del(L[index])
+                                        
+ remove element at end of list with L.pop(), returns the
+removed element
+                                        
+ remove a specific element with L.remove(element)
+                                        
+• looks for the element and removes it
+                                        
+• if element occurs multiple times, removes first occurrence
+                                        
+• if element not in list, gives an error 
+                                        
+CONVERT LISTS TO STRINGS AND BACK:
+                                        
+ convert string to list with list(s), returns a list with every
+character from s an element in L
+                                        
+ can use s.split(), to split a string on a character parameter,
+splits on spaces if called without a parameter
+                                        
+ use ''.join(L) to turn a list of characters into a string, can
+give a character in quotes to add char between every element
+                                        
+OTHER LIST OPERATIONS
+
+ sort() and sorted()
+                                        
+ reverse()                                        
+                                        
+https://docs.python.org/3/tutorial/datastructures.html
+                                        
+http://www.pythontutor.com/
+                                        
+LISTS IN MEMORY
+                                        
+ lists are mutable
+                                        
+ behave differently than immutable types
+                                        
+ is an object in memory
+                                        
+ variable name points to object
+                                        
+ any variable pointing to that object is affected
+                                        
+ key phrase to keep in mind when working with lists is side effects
+
+AN ANALOGY
+                                        
+ attributes of a person
+                                        
+◦ singer, rich
+                                        
+ he is known by many names
+                                        
+ all nicknames point to the same person
+                                        
+• add new attribute to one nickname …
+                                        
+• … all his nicknames refer to old attributes AND all new ones
+                                        
+Justin Bieber singer rich troublemaker
+                                        
+The Bieb singer rich troublemaker
+                                        
+JBeebs singer rich troublemaker         
+                                        
+CLONING A LIST
+                                        
+ create a new list and copy every element using
+                                        
+chill = cool[:]
+ 
+SORTING LISTS
+ calling sort() mutates the list, returns nothing
+                                        
+ calling sorted() does not mutate list, must assign result to a variable
+
+LISTS OF LISTS OF LISTS OF….
+                                        
+ can have nested lists
+                                        
+ side effects still possible after mutation
+                                        
                                         
