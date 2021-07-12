@@ -338,9 +338,131 @@ GUESS-AND-CHECK
                                         
  you are able to guess a value for solution
                                         
-                                        
-                                        
-                                        
-                                        
  you are able to check if the solution is correct
+                                        
  keep guessing until find solution or guessed all values
+                                        
+GOOD PROGRAMMING
+                                        
+ more code not necessarily a good thing
+                                        
+ measure good programmers by the amount of
+functionality
+                                        
+ introduce functions
+                                        
+ mechanism to achieve decomposition and abstraction
+
+CREATE STRUCTURE with
+DECOMPOSITION
+
+ in projector example, separate devices
+                                        
+ in programming, divide code into modules
+                                        
+• are self-contained
+                                        
+• used to break up code
+                                        
+• intended to be reusable
+                                        
+• keep code organized
+                                        
+• keep code coherent
+                                        
+ this lecture, achieve decomposition with functions
+                                        
+ in a few weeks, achieve decomposition with classes
+                                        
+SUPRESS DETAILS with
+ABSTRACTION
+
+ in projector example, instructions for how to use it are
+sufficient, no need to know how to build one
+                                        
+ in programming, think of a piece of code as a black box
+                                        
+• cannot see details
+                                        
+• do not need to see details
+                                        
+• do not want to see details
+                                        
+• hide tedious coding details
+                                        
+ achieve abstraction with function specifications or
+docstrings     
+                                        
+FUNCTIONS
+                                        
+ write reusable pieces/chunks of code, called functions
+                                        
+ functions are not run in a program until they are
+“called” or “invoked” in a program
+                                        
+ function characteristics:
+• has a name
+                                        
+• has parameters (0 or more)
+                                        
+• has a docstring (optional but recommended)
+                                        
+• has a body
+                                        
+• returns something                                       
+                                        
+VARIABLE SCOPE
+                                        
+ formal parameter gets bound to the value of
+actual parameter when function is called
+                                        
+ new scope/frame/environment created when enter a function
+                                        
+ scope is mapping of names to objects
+                                        
+ Python returns the value None, if no return given
+                                        
+ represents the absence of a value
+                                        
+return :
+                                        
+ return only has meaning
+inside a function
+                                        
+ only one return executed
+inside a function
+                                        
+ code inside function but
+after return statement not
+executed
+                                        
+ has a value associated
+with it, given to function
+caller
+                                        
+                                        
+print:
+                                        
+ print can be used outside
+functions
+                                        
+ can execute many print
+statements inside a function
+                                        
+ code inside function can be
+executed after a print
+statement
+                                        
+ has a value associated with
+it, outputted to the console                                        
+                                        
+ arguments can take on any type, even functions
+                                        
+SCOPE EXAMPLE:
+                                        
+ inside a function, can access a variable defined outside
+                                        
+ inside a function, cannot modify a variable defined
+outside -- can using global variables, but frowned upon  
+                                        
+                                        
